@@ -16,23 +16,6 @@ var date = new Date(); //Date (YEAR/MONTH/DAY)
 var final_date = date.getFullYear() + "/" + date.getMonth() + "/" + date.getDate();
 var final_date_w_time = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
-//MySQL Connection
-const conn = mysql.createConnection({
-	host: '68.183.71.241',
-	user: 'jb-rp',
-	password: 'sNDL5rAHuxXgHAdNWXh8tTTggGF5',
-	database: 'junibacken'
-});
-
-/*
-const conn = mysql.createConnection({
-	host: '68.183.71.241',
-	user: 'junibacken',
-	password: 'g00nshr3d!_',
-	database: 'junibacken'
-});
-*/
-
 
 //Configure logger settings
 logger.remove(logger.transports.Console);
